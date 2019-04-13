@@ -26,12 +26,12 @@ html
                     ul.nav.navbar-nav
                         block menu
                             li
-                                a(href='/') 대문으로
+                                a(href='/') 대문
                     form.navbar-form.navbar-right(role='search',action="/search")
                         unless nosearch
                             form.navbar-form(action='search', method='GET')
                                 .input-group
-                                    input.form-control(type='text', placeholder='검색하기', name='q')
+                                    input.form-control(type='text', placeholder='검색', name='q')
                                     .input-group-btn
                                         button.btn.btn-default(type='submit')
                                             i.glyphicon.glyphicon-search
